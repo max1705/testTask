@@ -1,0 +1,146 @@
+html, body {  
+  background-color: #F8FAFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+.App {
+  color: #292E3D;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+.App_MainContent {
+  margin-top: 128px;
+  h1 {
+    color: #7884A5;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -0.008em;
+    text-align: left;
+  }
+  h4 {
+    color: #525c7a;
+    font-size: 28px;
+    margin: 0 0 16px;
+  }
+  label {
+    color: #a2acc7;
+    font-size: 18px;
+  }
+}
+
+.App_TextBlock {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 859px;
+  min-height: 201px;
+  margin: 128px 32px 57px;
+  padding: 0px 8px 0px 8px;
+}
+
+.App_SliderBlock {
+  width: 100vw;
+  max-width:100%;
+  height: 453px;
+  display: flex;
+  overflow: hidden;
+}
+
+.App_SlideElement {
+  width: 344px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  div {
+    padding: 0 8px;
+  }
+}
+
+.App_SlideElementLong {
+  width: 688px;
+  height: 344px;
+}
+
+.App_SlideElementImgId1{
+  min-width: 100%;
+  min-height: 344px;
+  object-fit: cover;
+  border-radius: 220px 0;
+}
+.App_SlideElementImgId2{
+  min-width: 100%;
+  min-height: 344px;
+  object-fit: cover;
+  border-radius: 600px;
+}
+.App_SlideElementImgId3{
+  min-width: 100%;
+  min-height: 344px;
+  object-fit: cover;
+  border-radius: 120px 0;
+}
+.App_SlideElementImgId4{
+  min-width: 100%;
+  min-height: 344px;
+  object-fit: cover;
+  border-radius: 0 220px;
+}
+
+.App_SliderWrap {
+  position: relative;
+
+}
+
+.App_Slider {
+  & > div {
+    margin: 0 32px;
+  } 
+}
+
+.App_Slide {
+  width: fit-content!important;
+  cursor: pointer;
+  &:hover {
+    h4 {
+      color: #4FBA67;
+    }
+  }
+}
+
+.App_Slide img {
+  user-select: none;
+}
+
+.App_ArrowBlock {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 32px 98px;
+}
+
+.App_ArrowNav {
+  cursor: pointer;
+  display: flex;
+}
+
+.App_ArrowNav:hover {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(15%) saturate(623%) hue-rotate(186deg) brightness(90%) contrast(96%);color: red;
+}
+
+.App_ArrowNavPrev:before {
+  content:url(img/arrowLeft.svg);
+}
+
+.App_ArrowNavNext:before {
+  content:url(img/arrowRight.svg);
+}
+
+.App_Random {
+  display: none;
+}
